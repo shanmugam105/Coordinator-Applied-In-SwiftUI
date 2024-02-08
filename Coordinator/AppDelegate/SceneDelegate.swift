@@ -9,15 +9,16 @@ import SwiftUI
 
 final class SceneDelegate: NSObject, UIWindowSceneDelegate {
         
-    private let coordinator: Coordinator<MapRouter> = .init(startingRoute: .map)
-    
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        //
+        let vc = UIHostingController(rootView: MapView())
+        appNavigationController = UINavigationController(rootViewController: vc)
+        //
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = coordinator.navigationController
+        window?.rootViewController = appNavigationController
         window?.makeKeyAndVisible()
-        coordinator.start()
     }
 }

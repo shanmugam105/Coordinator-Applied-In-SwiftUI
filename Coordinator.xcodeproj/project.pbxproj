@@ -44,6 +44,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AAB9BF92B7539090053526B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E443484A2885DB870006C202 /* AppDelegate.swift */,
+				E443484C2885DB960006C202 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5AAB9BFA2B75392E0053526B /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E443483F2885986F0006C202 /* MapView.swift */,
+				E443484628859B6D0006C202 /* MapRouter.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		E4434825288549CB0006C202 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				E443484128859A1D0006C202 /* Coordinator */,
-				E443484A2885DB870006C202 /* AppDelegate.swift */,
-				E443484C2885DB960006C202 /* SceneDelegate.swift */,
-				E443484628859B6D0006C202 /* MapRouter.swift */,
-				E443483F2885986F0006C202 /* MapView.swift */,
+				5AAB9BF92B7539090053526B /* AppDelegate */,
+				5AAB9BFA2B75392E0053526B /* MapView */,
 				E4434833288549CB0006C202 /* CityView.swift */,
 				E4434835288549CE0006C202 /* Assets.xcassets */,
 				E4434837288549CE0006C202 /* Preview Content */,

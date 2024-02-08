@@ -9,13 +9,14 @@ import SwiftUI
 
 struct MapView: View {
     
-    @EnvironmentObject var coordinator: Coordinator<MapRouter>
+    var coordinator: Coordinator<MapRouter> = .init()
 
     var body: some View {
-        NavigationView {
+        VStack {
             Button("Go to the city") {
                 coordinator.show(.city(named: "El Paso"))
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
